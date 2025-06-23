@@ -42,6 +42,24 @@ async myFn(){
 myFn();
 ```
 
+## Usando no Google Sheets
+
+Também é possível consultar o rastreamento diretamente em uma planilha do
+Google. O diretório `appscript` contém um exemplo de script (`Code.gs`) pronto
+para ser adicionado ao seu projeto do **Google Apps Script**.
+
+1. Abra o menu `Extensões` > `Apps Script` em sua planilha.
+2. Crie um novo arquivo `Code.gs` e copie o conteúdo de `appscript/Code.gs`.
+3. Salve o projeto e utilize a função `TRACK_CORREIOS` nas células, por exemplo:
+
+```gs
+=TRACK_CORREIOS("XX000000000BR")
+```
+
+A função retorna um array de objetos contendo as informações de rastreio, de
+forma semelhante ao uso da biblioteca em Node.js.
+
+
 ### Utilizando o ES6
 
 ```js
