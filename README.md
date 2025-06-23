@@ -1,9 +1,5 @@
 # 📦 Rastreio Correios Brasil
 
-[![Build Status](https://img.shields.io/github/workflow/status/orkestral/venom/build.svg)](https://github.com/orkestral/venom/actions)
-[![Lint Status](https://img.shields.io/github/workflow/status/orkestral/venom/lint.svg?label=lint)](https://github.com/orkestral/venom/actions)
-[![release-it](https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80-release--it-e10079.svg)](https://github.com/release-it/release-it)
-
 > Rastreio correios é uma biblioteca que permite rastrear encomendas dos correios do Brasil
 
 ## Conteúdo
