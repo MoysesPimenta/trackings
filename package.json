@@ -1,0 +1,68 @@
+{
+  "name": "rastreio-correios",
+  "version": "1.1.7",
+  "description": "Biblioteca que permite rastrear objetos dos correios do Brasil",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc-watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it",
+    "changelog": "auto-changelog -p"
+  },
+  "keywords": [
+    "Rastreio",
+    "Correios",
+    "Rastrear Correios",
+    "Brasil",
+    "Correios Brasil",
+    "Encomendas",
+    "Api Correios",
+    "Rastreamento",
+    "rastreio de pacotes",
+    "sro",
+    "correio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fernandonetom/rastreio-correios"
+  },
+  "author": "Fernando <fernando39357@gmail.com>",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^4.1.0",
+    "@types/node": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "release-it": "^14.12.1",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "promise.any": "^2.0.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  }
+}
